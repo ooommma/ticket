@@ -1,12 +1,9 @@
 import Joi from 'joi';
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
-
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
-
 import { AuthModule } from './auth/auth.module';
-
 import { User } from '../src/user/entities/user.entity';
 import { UserModule } from './user/user.module';
 import { ReservationModule } from './reservation/reservation.module';
